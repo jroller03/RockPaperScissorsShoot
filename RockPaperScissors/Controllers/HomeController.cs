@@ -17,9 +17,9 @@ namespace RockPaperScissorsApp.Controllers
         [HttpPost("/submit")]
         public ActionResult Submit()
         {
-          RockPaperScissorsApp newRockPaperScissorsApp = new RockPaperScissorsApp ((Request.Form["player-one-answer"]), (Request.Form["player-two-answer"]), "");
-          string WinStatement = newRockPaperScissorsApp.GetWinner((Request.Form["player-one-answer"]), (Request.Form["player-two-answer"]));
-          return View("Index", newRockPaperScissorsApp);
+          RockPaperScissors newRockPaperScissors = new RockPaperScissors ((Request.Form["player-one-answer"]), (Request.Form["player-two-answer"]), "");
+          string WinStatement = newRockPaperScissors.GetWinner((Request.Form["player-one-answer"]), (Request.Form["player-two-answer"]));
+          return View("Index", newRockPaperScissors);
         }
     }
 }

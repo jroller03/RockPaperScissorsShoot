@@ -3,13 +3,13 @@ using System.IO;
 using System;
 namespace RockPaperScissorsApp.Models
 {
-  public class RockPaperScissorsApp
+  public class RockPaperScissors
   {
     private string _playerOne = null;
     private string _playerTwo = null;
     private string _winStatement = "";
 
-    public RockPaperScissorsApp(string PlayerOne, string PlayerTwo, string winStatement)
+    public RockPaperScissors(string PlayerOne, string PlayerTwo, string winStatement)
     {
       _playerOne = PlayerOne;
       _playerTwo = PlayerTwo;
