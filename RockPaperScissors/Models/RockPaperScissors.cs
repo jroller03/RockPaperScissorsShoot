@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System;
-namespace RockPaperScissorsApp.Models
+namespace RockPaperScissors.Models
 {
   public class RockPaperScissors
   {

@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
-using RockPaperScissorsApp.Models;
+using RockPaperScissors.Models;
 using System;
 
-namespace RockPaperScissorsApp.Controllers
+namespace RockPaperScissors.Controllers
 {
     public class HomeController : Controller
     {
