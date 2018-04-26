@@ -1,47 +1,47 @@
 using System;
 using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using RockPaperScissors.Models;
-namespace RockPaperScissors.Controllers
+using RockPaperScissorsApp.Models;
+namespace RockPaperScissorsApp.Controllers
 {
   [TestClass]
-  public class RockPaperScissorsTest
+  public class RockPaperScissorsAppTest
   {
     [TestMethod]
     public void PlayerOneRock_PlayerTwoRock_True()
     {
-      RockPaperScissors testRockPaperScissors = new RockPaperScissors();
-      Assert.AreEqual(true, testRockPaperScissors.GetWinner("rock", "rock"));
+      RockPaperScissorsApp testRockPaperScissorsApp = new RockPaperScissorsApp();
+      Assert.AreEqual(true, testRockPaperScissorsApp.GetWinner("rock", "rock"));
     }
     [TestMethod]
     public void PlayerOneRock_PlayerTwoScissors_True()
     {
-      RockPaperScissors testRockPaperScissors = new RockPaperScissors();
-      Assert.AreEqual(true, testRockPaperScissors.GetWinner("rock", "scissors"));
+      RockPaperScissorsApp testRockPaperScissorsApp = new RockPaperScissorsApp();
+      Assert.AreEqual(true, testRockPaperScissorsApp.GetWinner("rock", "scissors"));
     }
     [TestMethod]
     public void PlayerOneRock_PlayerTwoPaper_False()
     {
-      RockPaperScissors testRockPaperScissors = new RockPaperScissors();
-      Assert.AreEqual(false, testRockPaperScissors.GetWinner("rock", "paper"));
+      RockPaperScissorsApp testRockPaperScissorsApp = new RockPaperScissorsApp();
+      Assert.AreEqual(false, testRockPaperScissorsApp.GetWinner("rock", "paper"));
     }
     [TestMethod]
     public void PlayerOneScissors_PlayerTwoPaper_True()
     {
-      RockPaperScissors testRockPaperScissors = new RockPaperScissors();
-      Assert.AreEqual(true, testRockPaperScissors.GetWinner("scissors", "paper"));
+      RockPaperScissorsApp testRockPaperScissorsApp = new RockPaperScissorsApp();
+      Assert.AreEqual(true, testRockPaperScissorsApp.GetWinner("scissors", "paper"));
     }
     [TestMethod]
     public void PlayerOnePaper_PlayerTwoScissors_True()
     {
-      RockPaperScissors testRockPaperScissors = new RockPaperScissors();
-      Assert.AreEqual(false, testRockPaperScissors.GetWinner("paper", "scissors"));
+      RockPaperScissorsApp testRockPaperScissorsApp = new RockPaperScissorsApp();
+      Assert.AreEqual(false, testRockPaperScissorsApp.GetWinner("paper", "scissors"));
     }
     [TestMethod]
     public void PlayerOne_Or_PlayerTwo_Null_True()
     {
-      RockPaperScissors testRockPaperScissors = new RockPaperScissors();
-      Assert.AreEqual(true, testRockPaperScissors.GetWinner(null, null));
+      RockPaperScissorsApp testRockPaperScissorsApp = new RockPaperScissorsApp();
+      Assert.AreEqual(true, testRockPaperScissorsApp.GetWinner(null, null));
     }
   }
 }

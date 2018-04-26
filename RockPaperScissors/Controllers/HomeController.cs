@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
-using RockPaperScissors.Models;
+using RockPaperScissorsApp.Models;
 using System;
 
-namespace RockPaperScissors.Controllers
+namespace RockPaperScissorsApp.Controllers
 {
     public class HomeController : Controller
     {
@@ -17,9 +17,9 @@ namespace RockPaperScissors.Controllers
         [HttpPost("/submit")]
         public ActionResult Submit()
         {
-          RockPaperScissors newRockPaperScissors = new RockPaperScissors ((Request.Form["player-one-answer"]), (Request.Form["player-two-answer"]), "");
-          string WinStatement = newRockPaperScissors.GetWinner((Request.Form["player-one-answer"]), (Request.Form["player-two-answer"]));
-          return View("Index", newRockPaperScissors);
+          RockPaperScissorsApp newRockPaperScissorsApp = new RockPaperScissorsApp ((Request.Form["player-one-answer"]), (Request.Form["player-two-answer"]), "");
+          string WinStatement = newRockPaperScissorsApp.GetWinner((Request.Form["player-one-answer"]), (Request.Form["player-two-answer"]));
+          return View("Index", newRockPaperScissorsApp);
         }
     }
 }
